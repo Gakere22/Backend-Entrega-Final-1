@@ -1,0 +1,24 @@
+
+<h3> Producto</h3>
+<div>
+    {{#if result.status}}
+    {{#with result }}
+    <div>
+        Nombre: {{this.title}}<br>
+        Vategoria: {{this.category}}<br>
+        Precio:{{this.price}}<br>
+        Stock: {{this.stock}}<br>
+        <br>
+        <button id= "agregarAlCarrito" type="submit">Agregar</button>
+        <button id= "eliminarDelCarrito" type="submit">Eliminar</button>
+    </div>
+    {{/with}}
+    {{else}}
+        {{#with result }}
+            <div>
+                Producto disponible
+            </div>
+        {{/with}}
+    {{/if}}
+    
+</div>

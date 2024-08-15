@@ -1,0 +1,15 @@
+.productosActualizados{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    background-color: blue;
+}
+
+.productoDetalle {
+    background-color: beige;
+    max-width: 398px;
+    max-height: 398px;
+
+
+
+}

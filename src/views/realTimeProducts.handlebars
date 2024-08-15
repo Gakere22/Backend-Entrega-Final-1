@@ -1,0 +1,47 @@
+
+
+
+
+<p>Productos Real Time</p>
+<h2>Alta Producto</h2>
+
+<div>
+ <form action="/realTimeProducts" method="post">
+<label for="namePro">Nombre</label>
+<input type="text" id= "namePro" name="title">
+<label for="descriptionPro">Descripcion</label>
+<input type="text" id="descriptionPro" name="description">
+<label for="codePro">Codigo</label>
+<input type="text" id="codePro" name="code">
+<label for="pricePro">Precio</label>
+<input type="nuember" id="pricePro" name="price">
+<label for="categoryPro">Categoria</label>
+<input type="text" id="categoryPro" name="category">
+<label for="stockPro">Stock</label>
+<input type="number" id="stockPro" name="stock">
+<label for="imagenPro">Imagen</label>
+<input type="file" id="imagen" onchange="handleFiles(this.files)">
+<button type="submit">Agregar</button>
+</form>
+<h2>Eliminar Producto</h2>
+<form action="/realTimeProducts" method="get">
+    <label for="idPro">id Producto</label>
+    <input type="numbre"  id="idPro" name="id">
+    <button type="submit" id="eliminarProducto">Eliminar</button>
+</form>
+</div>
+
+<h2>Listado de productos</h2>
+
+<div id="productosActualizados">
+       
+        
+        
+
+</div>
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

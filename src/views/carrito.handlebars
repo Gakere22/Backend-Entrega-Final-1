@@ -1,0 +1,24 @@
+<p>Carrito</p>
+
+
+<div>
+
+   {{#each products }}
+    <div>
+         
+     <br>
+    <p id="idPro"  style="display:none" ></p>  
+       {{#with}}
+             Nombre:{{title}} <br>
+             Preci: {{price}} <br>
+             Categoria:{{category}}  <br> 
+        {{/with}}
+    </div>
+    {{/each}}
+    Cantidad: {{quantity}}
+ 
+</div>
+<br />
+
+
+
